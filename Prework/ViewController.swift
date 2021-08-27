@@ -31,5 +31,11 @@ class ViewController: UIViewController {
         
     }
     
+    
+    @IBAction func didTapButton(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "advanced_vc") as! AdvancedViewController
+        present(vc, animated: true)
+    }
+    
 }
 
